@@ -41,6 +41,7 @@
     @yield('style')
   </head>
 
+<!-- gunkana nav-sm untuk membuat tampilan di block, dan nav-md gunakan untuk memperbesar -->
   <body class="nav-md">
     <div class="container body">
       <div class="main_container">

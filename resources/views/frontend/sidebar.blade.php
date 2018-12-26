@@ -30,8 +30,8 @@
       <h3>General</h3>
       <ul class="nav side-menu">
         @if (Sentinel::getUser()->hasAccess(['user.index','role.index']))
-          <li><a><i class="fa fa-users"></i>Users Management <span class="fa fa-chevron-down"></span></a>
-            <ul class="nav child_menu">
+          <li class=""><a><i class="fa fa-users"></i>Users Management <span class="fa fa-chevron-down"></span></a>
+            <ul class="nav child_menu" style="display:none;">
               @if (Sentinel::getUser()->hasAccess(['user.index']))
                 <li><a href="{{route('user.index')}}">User</a></li>
               @endif
@@ -41,7 +41,7 @@
             </ul>
           </li>
         @endif
-          <li><a href="{{ url('My-QrCode') }}"><i class="fa fa-qrcode"></i>My QR-Code</a></li>
+          <li class=""><a href="{{ url('My-QrCode') }}"><i class="fa fa-qrcode"></i>My QR-Code</a></li>
       </ul>
     </div>
 
